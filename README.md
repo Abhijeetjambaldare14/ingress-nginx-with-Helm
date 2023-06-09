@@ -33,9 +33,9 @@ ingress-nginx/ingress-nginx     4.7.0           1.8.0          Ingress controlle
 ```
 # Install Chart
 Important: only helm3 is supported
-
-`helm install my-ingress-nginx ingress-nginx/ingress-nginx --version 4.7.0`
-
+```
+helm install my-ingress-nginx ingress-nginx/ingress-nginx --version 4.7.0
+```
 The command deploys ingress-nginx on the Kubernetes cluster in the default configuration.
 
 See [configuration](https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx#configuration/) below </br>
