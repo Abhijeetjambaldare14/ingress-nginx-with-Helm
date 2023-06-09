@@ -46,6 +46,10 @@ See [helm install](https://helm.sh/docs/helm/helm_install/)  for command documen
 
 `helm list --all-namespaces`
 
+# Second ingress on different Namespace
+
+`helm install  ingress-qa ingress-nginx/ingress-nginx --version 4.7.0 --namespace ingress-basic --set controller.ingressClassResource.name=class1`
+
 # Uninstall Chart
 
 `helm uninstall [RELEASE_NAME]`
