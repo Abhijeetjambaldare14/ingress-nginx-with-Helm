@@ -49,6 +49,17 @@ See [helm install](https://helm.sh/docs/helm/helm_install/)  for command documen
 # Second ingress on different Namespace
 
 `helm install  ingress-qa ingress-nginx/ingress-nginx --version 4.7.0 --namespace ingress-basic --set controller.ingressClassResource.name=class1`
+![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/4dbf7ed5-60b8-4d91-9b97-9ca8b25f4b2f)
+
+
+# Upgrading Chart 
+`helm upgrade [RELEASE_NAME] [CHART] --install`
+![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/d65c601e-9f51-4031-bae1-163fdddb21df)
+`helm upgrade ingress-qa ingress-nginx/ingress-nginx --version 4.4.2 -n ingress-basic`
+
+![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/c8d2bf1f-625c-4306-840f-d6d051120c57)
+
+See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command documentation. </br>
 
 # Uninstall Chart
 
@@ -58,8 +69,4 @@ This removes all the Kubernetes components associated with the chart and deletes
 
 See [helm unistall](https://helm.sh/docs/helm/helm_uninstall/) for command documentation. </br>
 
-# Upgrading Chart
-`helm upgrade [RELEASE_NAME] [CHART] --install`
-
-See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command documentation. </br>
 
