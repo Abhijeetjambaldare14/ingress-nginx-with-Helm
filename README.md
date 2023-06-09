@@ -46,9 +46,9 @@ See [helm install](https://helm.sh/docs/helm/helm_install/)  for command documen
 
 `helm uninstall [RELEASE_NAME]`
 This removes all the Kubernetes components associated with the chart and deletes the release.
-See [helm unistall](https://helm.sh/docs/helm/helm_uninstall/) for command documentation.
+See [helm unistall](https://helm.sh/docs/helm/helm_uninstall/) for command documentation. </br>
 
 # Upgrading Chart
 `helm upgrade [RELEASE_NAME] [CHART] --install`
-See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command documentation.
+See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command documentation. </br>
 
