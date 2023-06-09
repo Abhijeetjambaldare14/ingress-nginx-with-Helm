@@ -31,3 +31,5 @@ From the app version we select the version that matches the compatibility matrix
 NAME                            CHART VERSION   APP VERSION     DESCRIPTION
 ingress-nginx/ingress-nginx     4.7.0           1.8.0          Ingress controller for Kubernetes using NGINX a...
 ```
+
+`helm install my-ingress-nginx ingress-nginx/ingress-nginx --version 4.7.0`
