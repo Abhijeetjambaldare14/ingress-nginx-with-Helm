@@ -18,9 +18,10 @@ From our container we can do this:
 ```
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo list
-![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/0eb43f2f-1b94-4755-a7a3-e17d947c9ab3)
 helm search repo ingress-nginx --versions 
 ```
+![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/446e1968-fc32-4300-b338-d1522149b7ce)
+
 if new version is not available update repo
 `helm repo update`
 
