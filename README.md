@@ -64,9 +64,24 @@ See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command document
 # Uninstall Chart
 
 `helm uninstall [RELEASE_NAME]`
+Keep History </br>
+`helm uninstall ingress-dev --keep-history -n ingress-dev`
+![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/c8ef9cc9-03e8-4c3f-8218-a99a96f38984)
+`helm list --all-namespaces -a`
+![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/a124a8eb-e8d0-4936-aec1-4043123cf733)
 
 This removes all the Kubernetes components associated with the chart and deletes the release.
 
 See [helm unistall](https://helm.sh/docs/helm/helm_uninstall/) for command documentation. </br>
+
+# roll back a release to a previous revision
+helm history ingress-qa -n ingress-basic
+![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/4f957b4d-12e3-4f8d-b696-6078a287d966)
+`helm rollback ingress-qa 1 -n ingress-basic`
+![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/814c34e0-801e-4ae2-942b-04a4840258f1)
+`helm history ingress-qa -n ingress-basic`
+![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/91024382-e01b-411f-b96c-a7622b2eba5c)
+
+
 
 
