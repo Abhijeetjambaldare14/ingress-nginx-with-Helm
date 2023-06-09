@@ -42,6 +42,10 @@ See [configuration](https://artifacthub.io/packages/helm/ingress-nginx/ingress-n
 
 See [helm install](https://helm.sh/docs/helm/helm_install/)  for command documentation </br>
 
+# List of all installation through Helm
+
+`helm list --all-namespaces`
+
 # Uninstall Chart
 
 `helm uninstall [RELEASE_NAME]`
