@@ -64,7 +64,7 @@ See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command document
 # Uninstall Chart
 
 `helm uninstall [RELEASE_NAME]`
-Keep History </br>
+# Keep History </br>
 ```helm uninstall ingress-dev --keep-history -n ingress-dev```
 ![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/c8ef9cc9-03e8-4c3f-8218-a99a96f38984)</br>
 `helm list --all-namespaces -a`
