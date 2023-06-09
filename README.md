@@ -31,11 +31,13 @@ From the app version we select the version that matches the compatibility matrix
 NAME                            CHART VERSION   APP VERSION     DESCRIPTION
 ingress-nginx/ingress-nginx     4.7.0           1.8.0          Ingress controller for Kubernetes using NGINX a...
 ```
-Install Chart
+# Install Chart
 Important: only helm3 is supported
+
 `helm install my-ingress-nginx ingress-nginx/ingress-nginx --version 4.7.0`
+
 The command deploys ingress-nginx on the Kubernetes cluster in the default configuration.
 
-See  below.
+See https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx#configuration below.
 
-See  for command documentation.
+See https://helm.sh/docs/helm/helm_install/  for command documentation.
