@@ -23,7 +23,9 @@ helm search repo ingress-nginx --versions
 ![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/446e1968-fc32-4300-b338-d1522149b7ce)
 
 if new version is not available update repo
-`helm repo update`
+```
+helm repo update
+```
 
 From the app version we select the version that matches the compatibility matrix. </br>
 
@@ -43,31 +45,41 @@ See [configuration](https://artifacthub.io/packages/helm/ingress-nginx/ingress-n
 See [helm install](https://helm.sh/docs/helm/helm_install/)  for command documentation </br>
 
 # List of all installation through Helm
-
-`helm list --all-namespaces`
-
+```
+helm list --all-namespaces
+```
 # Second ingress on different Namespace
-
-`helm install  ingress-qa ingress-nginx/ingress-nginx --version 4.7.0 --namespace ingress-basic --set controller.ingressClassResource.name=class1`
+```
+helm install  ingress-qa ingress-nginx/ingress-nginx --version 4.7.0 --namespace ingress-basic --set controller.ingressClassResource.name=class1
+```
 ![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/4dbf7ed5-60b8-4d91-9b97-9ca8b25f4b2f)
 
 
 # Upgrading Chart 
-`helm upgrade [RELEASE_NAME] [CHART] --install`
+```
+helm upgrade [RELEASE_NAME] [CHART] --install
+```
 ![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/d65c601e-9f51-4031-bae1-163fdddb21df)
-`helm upgrade ingress-qa ingress-nginx/ingress-nginx --version 4.4.2 -n ingress-basic`
+```
+helm upgrade ingress-qa ingress-nginx/ingress-nginx --version 4.4.2 -n ingress-basic
+```
 
 ![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/c8d2bf1f-625c-4306-840f-d6d051120c57)
 
 See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command documentation. </br>
 
 # Uninstall Chart
-
-`helm uninstall [RELEASE_NAME]`
+```
+helm uninstall [RELEASE_NAME]
+```
 # Keep History </br>
-```helm uninstall ingress-dev --keep-history -n ingress-dev```
+```
+helm uninstall ingress-dev --keep-history -n ingress-dev
+```
 ![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/c8ef9cc9-03e8-4c3f-8218-a99a96f38984)</br>
-`helm list --all-namespaces -a`
+```
+helm list --all-namespaces -a
+```
 ![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/a124a8eb-e8d0-4936-aec1-4043123cf733)</br>
 
 This removes all the Kubernetes components associated with the chart and deletes the release.
@@ -75,11 +87,17 @@ This removes all the Kubernetes components associated with the chart and deletes
 See [helm unistall](https://helm.sh/docs/helm/helm_uninstall/) for command documentation. </br>
 
 # roll back a release to a previous revision
-`helm history ingress-qa -n ingress-basic`
+```
+helm history ingress-qa -n ingress-basic
+```
 ![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/4f957b4d-12e3-4f8d-b696-6078a287d966)</br>
-`helm rollback ingress-qa 1 -n ingress-basic`
+```
+helm rollback ingress-qa 1 -n ingress-basic
+```
 ![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/814c34e0-801e-4ae2-942b-04a4840258f1)</br>
-`helm history ingress-qa -n ingress-basic`
+```
+helm history ingress-qa -n ingress-basic
+```
 ![image](https://github.com/Abhijeetjambaldare14/ingress-nginx-with-Helm/assets/13759950/91024382-e01b-411f-b96c-a7622b2eba5c)</br>
 
 
