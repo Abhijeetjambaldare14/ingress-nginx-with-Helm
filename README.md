@@ -41,3 +41,14 @@ The command deploys ingress-nginx on the Kubernetes cluster in the default confi
 See [configuration](https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx#configuration/) below </br>
 
 See [helm install](https://helm.sh/docs/helm/helm_install/)  for command documentation </br>
+
+# Uninstall Chart
+
+`helm uninstall [RELEASE_NAME]`
+This removes all the Kubernetes components associated with the chart and deletes the release.
+See [helm unistall](https://helm.sh/docs/helm/helm_uninstall/) for command documentation.
+
+# Upgrading Chart
+`helm upgrade [RELEASE_NAME] [CHART] --install`
+See [helm upgrade](https://helm.sh/docs/helm/helm_upgrade/) for command documentation.
+
