@@ -38,6 +38,6 @@ Important: only helm3 is supported
 
 The command deploys ingress-nginx on the Kubernetes cluster in the default configuration.
 
-See https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx#configuration below.
+See [configuration](https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx#configuration/) below </br>
 
 See [helm install](https://helm.sh/docs/helm/helm_install/)  for command documentation </br>
