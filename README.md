@@ -40,4 +40,4 @@ The command deploys ingress-nginx on the Kubernetes cluster in the default confi
 
 See https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx#configuration below.
 
-See https://helm.sh/docs/helm/helm_install/  for command documentation.
+See [helm install] https://helm.sh/docs/helm/helm_install/  for command documentation.
